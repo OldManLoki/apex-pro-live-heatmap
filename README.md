@@ -4,7 +4,7 @@ An unofficial, portable Windows utility that counts physical key presses, calcul
 
 The current keyboard map is designed and tested for the **Apex Pro Full-size Gen 3 with German ISO (ISO-DE) layout**.
 
-> **Beta software:** Version 0.1.1 works on the tested setup, but other Apex Pro generations and layouts may require mapping adjustments.
+> **Beta software:** Version 0.1.2 works on the tested setup, but other Apex Pro generations and layouts may require mapping adjustments.
 
 [Deutsche Anleitung](README.de.md)
 
@@ -122,6 +122,7 @@ Only the Apex Pro Full-size Gen 3 with German ISO layout has been tested so far.
 - **“GG is not running”:** Open SteelSeries GG, then press Stop and Start in the utility.
 - **The app is listed but RGB does not react:** Enable it under **Engine → Apps** and temporarily disable other GameSense apps.
 - **Normal lighting does not return after Stop:** Wait a few seconds or toggle the app once in GG.
+- **Counting stops after using the tray:** Update to version 0.1.2-beta or later. Earlier versions could lose their Raw Input registration when Windows recreated the hidden window.
 - **A special key lights in the wrong place:** The mapping is defined in `BuildLayout` in `ApexHeatmapApp.cs`.
 - **Windows blocks the download:** Open the downloaded ZIP's properties, choose **Unblock** if shown, then extract it fully.
 
