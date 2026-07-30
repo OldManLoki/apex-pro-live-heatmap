@@ -40,6 +40,32 @@ Windows SmartScreen may warn about the unsigned executable. This project does no
 
 The **Configure** button shown for the app inside GG opens GG's general GameSense settings. The heatmap preview, counters and controls are in the separate **Apex Pro Live Heatmap** window.
 
+### Installation folder
+
+No special SteelSeries or GameSense folder is required. SteelSeries GG
+does not discover the utility by scanning its installation directory.
+When started, the utility registers itself with the local GameSense API.
+
+Extract all files together into any normal folder where your Windows
+account can write, for example:
+
+```text
+C:\Tools\ApexProLiveHeatmap
+```
+
+or:
+
+```text
+%LOCALAPPDATA%\Programs\ApexProLiveHeatmap
+```
+
+Do not run the utility directly from inside the ZIP. Avoid protected
+locations such as `C:\Program Files`, because the utility creates
+`config.json` and optionally `stats.json` beside the executable. Set up
+Windows autostart only after choosing the final folder. If the folder is
+moved later, remove and reinstall the autostart shortcut using the
+included scripts.
+
 ## Controls
 
 - **Start / Stop:** Enable or disable global input counting and RGB output.
