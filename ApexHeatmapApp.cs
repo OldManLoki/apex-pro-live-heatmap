@@ -17,9 +17,9 @@ using System.Windows.Forms;
 [assembly: AssemblyDescription("Live key-usage heatmap for SteelSeries Apex Pro keyboards")]
 [assembly: AssemblyCompany("Community project")]
 [assembly: AssemblyProduct("Apex Pro Live Heatmap")]
-[assembly: AssemblyCopyright("Copyright (c) 2026")]
-[assembly: AssemblyVersion("0.1.0.0")]
-[assembly: AssemblyFileVersion("0.1.0.0")]
+[assembly: AssemblyCopyright("Copyright (c) 2026 OldManLoki")]
+[assembly: AssemblyVersion("0.1.1.0")]
+[assembly: AssemblyFileVersion("0.1.1.0")]
 
 namespace ApexProHeatmap
 {

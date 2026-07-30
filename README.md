@@ -4,7 +4,7 @@ An unofficial, portable Windows utility that counts physical key presses, calcul
 
 The current keyboard map is designed and tested for the **Apex Pro Full-size Gen 3 with German ISO (ISO-DE) layout**.
 
-> **Beta software:** Version 0.1.0 works on the tested setup, but other Apex Pro generations and layouts may require mapping adjustments.
+> **Beta software:** Version 0.1.1 works on the tested setup, but other Apex Pro generations and layouts may require mapping adjustments.
 
 [Deutsche Anleitung](README.de.md)
 
@@ -113,5 +113,15 @@ SteelSeries GG publishes its local GameSense endpoint in `%PROGRAMDATA%\SteelSer
 
 ## License and status
 
-Released under the [MIT License](LICENSE). This is an independent community project and is not affiliated with or endorsed by SteelSeries.
+Version 0.1.1-beta and later is available under the
+[PolyForm Noncommercial License 1.0.0](LICENSE). Personal, hobby,
+educational and other noncommercial use, modification and distribution
+are welcome under its terms. Commercial use requires a
+[separate written license](COMMERCIAL-LICENSING.md) from the copyright
+holder.
 
+The historical 0.1.0-beta release used the MIT License; see the
+[license history](LICENSE-HISTORY.md).
+
+Copyright 2026 OldManLoki. This is an independent community project and
+is not affiliated with or endorsed by SteelSeries.
