@@ -18,8 +18,8 @@ using System.Windows.Forms;
 [assembly: AssemblyCompany("Community project")]
 [assembly: AssemblyProduct("Apex Pro Live Heatmap")]
 [assembly: AssemblyCopyright("Copyright (c) 2026 OldManLoki")]
-[assembly: AssemblyVersion("0.1.2.0")]
-[assembly: AssemblyFileVersion("0.1.2.0")]
+[assembly: AssemblyVersion("0.1.3.0")]
+[assembly: AssemblyFileVersion("0.1.3.0")]
 
 namespace ApexProHeatmap
 {
@@ -259,7 +259,6 @@ namespace ApexProHeatmap
 
         private void HideToTray()
         {
-            ShowInTaskbar=false;
             Hide();
             if (!trayHintShown)
             {
@@ -272,7 +271,6 @@ namespace ApexProHeatmap
 
         private void ShowFromTray()
         {
-            ShowInTaskbar=true;
             Show();
             WindowState=FormWindowState.Normal;
             Activate();

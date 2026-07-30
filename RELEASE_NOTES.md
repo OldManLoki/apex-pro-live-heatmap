@@ -1,18 +1,17 @@
-# Apex Pro Live Heatmap 0.1.2-beta
+# Apex Pro Live Heatmap 0.1.3-beta
 
-This release fixes physical key counting stopping after the application
-was minimized to or restored from the system tray.
+This release removes a temporary non-interactive ghost window that
+could appear while minimizing the application to the system tray.
 
 ## Fix
 
-Windows Forms may recreate the main window's native handle when
-`ShowInTaskbar` changes. Raw Input was registered only for the original
-handle, so the UI and GameSense output could continue while no new key
-events arrived.
+Version 0.1.2 protected Raw Input from native window-handle recreation,
+but the tray transition still forced such a recreation by changing
+`ShowInTaskbar`.
 
-The utility now registers Raw Input every time the native window handle
-is created. This keeps capture attached across tray transitions and
-other handle recreations.
+The tray behavior now simply hides and restores the existing form.
+This removes the unnecessary transition while preserving the Raw Input
+re-registration safeguard for any handle recreation caused elsewhere.
 
 ## Licensing
 
