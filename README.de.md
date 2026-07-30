@@ -80,6 +80,24 @@ Einige Sonderfunktionen, die die Tastatur ausschließlich intern verarbeitet (be
 - **Einzelne Sondertaste sitzt farblich daneben:** `ApexHeatmapApp.cs` enthält in `BuildLayout` die Zuordnung. Das GameSense-Raster ist geräteunabhängig; kleine Modellabweichungen können dort korrigiert werden.
 - **Start wird von Windows blockiert:** Rechtsklick auf die heruntergeladene ZIP-Datei → Eigenschaften → gegebenenfalls „Zulassen“, danach vollständig entpacken.
 
+## Lizenz
+
+Version 0.1.1-beta und spätere Versionen stehen unter der
+[PolyForm Noncommercial License 1.0.0](LICENSE). Private,
+nichtkommerzielle, schulische und gemeinnützige Nutzung, Veränderung
+und Weitergabe sind im Rahmen dieser Lizenz willkommen. Kommerzielle
+Nutzung benötigt eine
+[gesonderte schriftliche Lizenz](COMMERCIAL-LICENSING.md) des
+Rechteinhabers.
+
+Die historische Version 0.1.0-beta wurde unter der MIT-Lizenz
+veröffentlicht; Einzelheiten stehen in der
+[Lizenzhistorie](LICENSE-HISTORY.md).
+
+Copyright 2026 OldManLoki. Dieses Projekt ist ein unabhängiges
+Community-Projekt und weder mit SteelSeries verbunden noch von
+SteelSeries unterstützt.
+
 ## Quellcode und eigener Build
 
 Der vollständige C#-Quellcode liegt in `ApexHeatmapApp.cs`. `Build.cmd` kompiliert daraus mit dem in Windows enthaltenen .NET-Framework-Compiler eine neue `ApexProHeatmap.exe`.

@@ -2,6 +2,16 @@
 
 All notable changes to this project are documented here.
 
+## [0.1.1] - 2026-07-30
+
+### Changed
+
+- Changed new releases from the MIT License to the PolyForm
+  Noncommercial License 1.0.0
+- Added a separate commercial-licensing path
+- Added explicit copyright attribution to OldManLoki
+- Documented the license history of the original 0.1.0-beta release
+
 ## [0.1.0] - 2026-07-30
 
 ### Added
@@ -16,4 +26,3 @@ All notable changes to this project are documented here.
 - Start, stop and reset controls
 - System tray and optional Windows autostart support
 - Portable .NET Framework build with no external runtime dependencies
-
