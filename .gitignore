@@ -1,0 +1,15 @@
+# Local runtime data
+config.json
+stats.json
+error.log
+
+# Build output (distributed through GitHub Releases)
+ApexProHeatmap.exe
+dist/
+
+# Editor and OS files
+.vs/
+*.user
+*.suo
+Thumbs.db
+Desktop.ini

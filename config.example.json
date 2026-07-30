@@ -1,0 +1,11 @@
+{
+  "updateIntervalMs": 250,
+  "autosaveSeconds": 30,
+  "heatHalfLifeMinutes": 15.0,
+  "countAutoRepeat": false,
+  "persistStatistics": true,
+  "startAutomatically": true,
+  "minimizeToTray": true,
+  "normalization": "logarithmic"
+}
+
