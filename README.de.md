@@ -105,6 +105,7 @@ Einige Sonderfunktionen, die die Tastatur ausschließlich intern verarbeitet (be
 - **„GG läuft nicht“:** SteelSeries GG öffnen; danach im Tool Stop und wieder Start drücken.
 - **App sichtbar, aber keine RGB-Reaktion:** In GG unter Engine → Apps **Apex Pro Live Heatmap** aktivieren. Andere GameSense-Apps testweise deaktivieren.
 - **Normale Beleuchtung kommt nach Stop nicht zurück:** drei Sekunden warten oder in GG die App kurz aus-/einschalten.
+- **Zählung stoppt nach Nutzung des Infobereichs:** auf Version 0.1.2-beta oder neuer aktualisieren. Frühere Versionen konnten ihre Raw-Input-Registrierung verlieren, wenn Windows das versteckte Fenster neu erzeugte.
 - **Einzelne Sondertaste sitzt farblich daneben:** `ApexHeatmapApp.cs` enthält in `BuildLayout` die Zuordnung. Das GameSense-Raster ist geräteunabhängig; kleine Modellabweichungen können dort korrigiert werden.
 - **Start wird von Windows blockiert:** Rechtsklick auf die heruntergeladene ZIP-Datei → Eigenschaften → gegebenenfalls „Zulassen“, danach vollständig entpacken.
 

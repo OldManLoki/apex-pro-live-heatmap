@@ -18,8 +18,8 @@ using System.Windows.Forms;
 [assembly: AssemblyCompany("Community project")]
 [assembly: AssemblyProduct("Apex Pro Live Heatmap")]
 [assembly: AssemblyCopyright("Copyright (c) 2026 OldManLoki")]
-[assembly: AssemblyVersion("0.1.1.0")]
-[assembly: AssemblyFileVersion("0.1.1.0")]
+[assembly: AssemblyVersion("0.1.2.0")]
+[assembly: AssemblyFileVersion("0.1.2.0")]
 
 namespace ApexProHeatmap
 {
@@ -107,7 +107,6 @@ namespace ApexProHeatmap
             layout = BuildLayout();
             LoadStats();
             BuildUi();
-            RawKeyboardCounter.Register(Handle);
 
             timer.Interval = Math.Max(100, config.updateIntervalMs);
             timer.Tick += Tick;
@@ -118,6 +117,14 @@ namespace ApexProHeatmap
                     HideToTray();
             };
             if (config.startAutomatically) StartCapture();
+        }
+
+        protected override void OnHandleCreated(EventArgs e)
+        {
+            base.OnHandleCreated(e);
+            // Properties such as ShowInTaskbar can recreate the Win32 window.
+            // Raw Input targets a specific handle and must follow that change.
+            RawKeyboardCounter.Register(Handle);
         }
 
         private void BuildUi()
@@ -457,17 +464,14 @@ namespace ApexProHeatmap
         private static readonly object sync=new object();
         private static readonly Dictionary<int,long> pending=new Dictionary<int,long>();
         private static readonly HashSet<int> held=new HashSet<int>();
-        private static bool registered;
         public static bool Enabled;
         public static bool CountAutoRepeat;
 
         public static void Register(IntPtr windowHandle)
         {
-            if(registered)return;
             var devices=new[]{new RawInputDevice{UsagePage=0x01,Usage=0x06,Flags=RIDEV_INPUTSINK,Target=windowHandle}};
             if(!RegisterRawInputDevices(devices,1,(uint)Marshal.SizeOf(typeof(RawInputDevice))))
                 throw new Win32Exception(Marshal.GetLastWin32Error());
-            registered=true;
         }
 
         public static Dictionary<int,long> Drain(){lock(sync){var d=new Dictionary<int,long>(pending);pending.Clear();return d;}}

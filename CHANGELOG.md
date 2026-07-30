@@ -2,6 +2,15 @@
 
 All notable changes to this project are documented here.
 
+## [0.1.2] - 2026-07-30
+
+### Fixed
+
+- Re-register Raw Input whenever Windows Forms recreates the main window
+  handle
+- Keep physical key counting active after minimizing to or restoring from
+  the system tray
+
 ## [0.1.1] - 2026-07-30
 
 ### Changed
