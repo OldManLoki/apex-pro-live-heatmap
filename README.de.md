@@ -24,6 +24,34 @@ Mit **Stop** endet die Erfassung, und GG stellt nach wenigen Sekunden die normal
 
 Optional richtet `Start mit Windows installieren.cmd` einen Autostart-Link nur für das aktuelle Windows-Konto ein. `Autostart entfernen.cmd` entfernt ihn wieder.
 
+### Installationsordner
+
+Es ist kein besonderer SteelSeries- oder GameSense-Ordner erforderlich.
+SteelSeries GG sucht das Tool nicht anhand seines Speicherorts. Beim
+Start meldet sich das Tool selbstständig über die lokale
+GameSense-Schnittstelle bei GG an.
+
+Entpacke alle Dateien gemeinsam in einen normalen Ordner, in den dein
+Windows-Konto schreiben darf, beispielsweise:
+
+```text
+C:\Tools\ApexProLiveHeatmap
+```
+
+oder:
+
+```text
+%LOCALAPPDATA%\Programs\ApexProLiveHeatmap
+```
+
+Starte das Tool nicht direkt innerhalb der ZIP-Datei. Geschützte
+Verzeichnisse wie `C:\Programme` beziehungsweise `C:\Program Files`
+solltest du vermeiden, da das Tool `config.json` und optional
+`stats.json` neben der Programmdatei anlegt. Richte den Autostart erst
+ein, nachdem der endgültige Ordner feststeht. Wenn du den Ordner später
+verschiebst, entferne den Autostart mit dem beiliegenden Skript und
+richte ihn anschließend erneut ein.
+
 ## Bedienung
 
 - **Start / Stop:** globale Tastenerfassung und RGB-Ausgabe ein- oder ausschalten.
