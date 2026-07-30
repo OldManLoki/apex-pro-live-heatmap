@@ -2,6 +2,15 @@
 
 All notable changes to this project are documented here.
 
+## [0.1.3] - 2026-07-30
+
+### Fixed
+
+- Hide the window directly when minimizing to the system tray instead
+  of toggling `ShowInTaskbar`
+- Prevent a temporary non-interactive ghost window during the tray
+  transition
+
 ## [0.1.2] - 2026-07-30
 
 ### Fixed
